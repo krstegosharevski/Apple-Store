@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-apple-black: #000000;
+  --color-apple-dark: #1d1d1f;
+  --color-apple-gray: #f5f5f7;
+  --color-apple-light: #ffffff;
+  --color-apple-blue: #0066cc;
+  --color-apple-blue-hover: #0077ed;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-apple-light);
+  color: var(--color-apple-dark);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom scrollbar for a premium feel */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d2d2d7;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #86868b;
+}
+
+/* Utilities for text balance and tight tracking */
+.text-balance {
+  text-wrap: balance;
+}
+
+.tracking-tightest {
+  letter-spacing: -0.04em;
+}
